@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    
     <link rel="icon" href="favicon.webp" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>征战天下</title>
     <style>
-        /* 设置页面背景颜色 */
+        /* 设置页面背景和整体布局 */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             height: 100vh;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #3a7bd5, #00d2ff); /* 渐变背景 */
+            overflow: hidden; /* 防止滚动条出现 */
         }
 
-        /* 设置链接样式 */
+        /* 为链接设置样式 */
         a {
-            font-size: 20px;
-            color: #007bff;
-            text-decoration: none; /* 去掉下划线 */
+            font-size: 24px;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 20px 40px;
+            background-color: rgba(0, 123, 255, 0.7);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out; /* 添加过渡效果 */
         }
 
-        /* 使链接在鼠标悬停时变色 */
+        /* 链接悬停效果 */
         a:hover {
-            color: #0056b3;
+            color: #ffffff;
+            background-color: rgba(0, 56, 107, 0.9);
+            transform: translateY(-5px); /* 轻微的上升效果 */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         }
+
+        /* 页面标题样式 */
+        h1 {
+            color: #ffffff;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
     </style>
 </head>
 <body>
-    <!-- 居中显示的链接 -->
-    <a href="https://6bcc-183-253-73-31.ngrok-free.app" target="_blank">主服</a>
+    <div>
+        <a href="https://6bcc-183-253-73-31.ngrok-free.app" target="_blank">主服</a>
+    </div>
 </body>
 </html>
